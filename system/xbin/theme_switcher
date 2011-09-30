@@ -1,0 +1,27 @@
+#!/bin/bash
+#===============================================================================
+#
+#          FILE:  theme_switch
+# 
+#         USAGE:  ./theme_switch [name-theme]
+# 
+#   DESCRIPTION:  Utility for managing DroniX Themes 
+# 
+#       OPTIONS:  Name Theme
+#  REQUIREMENTS:  Library dronix_tool
+#          BUGS:  ---
+#         NOTES:  ---
+#        AUTHOR:  Stefano Viola (estebanSannin), stefanoviola85@gmail.com
+#       COMPANY:  DroniX Dev Team
+#       VERSION:  0.1.0
+#       CREATED:  28/09/2011 21:34:58 CEST
+#      REVISION:  ---
+#===============================================================================
+
+. /system/lib/dronix/dronix_tool.sh
+
+mountrw
+# Call Function "theme"
+theme $1
+
+
